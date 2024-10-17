@@ -34,6 +34,7 @@ Copiar código
 const variables = {
   API_URL: "https://localhost:7220/api/"
 }
+
 Ejecutar la aplicación en modo de desarrollo:
 
 bash
@@ -41,22 +42,3 @@ Copiar código
 npm run dev
 El frontend estará disponible en http://localhost:5173.
 
-Scripts Disponibles
-npm run dev: Ejecuta la aplicación en modo de desarrollo.
-npm run build: Compila la aplicación para producción en la carpeta dist.
-npm run serve: Sirve la aplicación compilada (debe ejecutarse después de npm run build).
-Estructura del Proyecto
-bash
-Copiar código
-miniCoreFront/
-├── public/             # Archivos públicos (favicon, index.html)
-├── src/
-│   ├── assets/         # Imágenes y otros recursos estáticos
-│   ├── components/     # Componentes de Vue
-│   ├── pages/          # Páginas principales de la aplicación
-│   ├── App.vue         # Componente principal
-│   ├── main.js         # Archivo de entrada principal
-│   └── router.js       # Configuración de rutas
-├── variables.js        # Configuración de la URL de la API
-├── package.json        # Configuración del proyecto y dependencias
-└── vite.config.js      # Configuración de Vite
