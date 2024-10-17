@@ -25,7 +25,6 @@ miniCoreFront es el frontend desarrollado con Vue.js para la aplicación MiniCor
    
 Instalar dependencias: Navega al directorio del proyecto y ejecuta el siguiente comando para instalar todas las dependencias:
 
-
    ```bash
    npm install
 
