@@ -26,7 +26,7 @@ miniCoreFront es el frontend desarrollado con Vue.js para la aplicación MiniCor
 2. **Instalar dependencias: Navega al directorio del proyecto y ejecuta el siguiente comando para instalar todas las dependencias:**
 
  ```bash
-   npm install
+npm install
 
 3. **Configurar la URL de la API: En el archivo variables.js, asegúrate de que la URL de la API apunte correctamente al backend:**
 
