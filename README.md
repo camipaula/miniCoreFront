@@ -1,5 +1,43 @@
-# Vue 3 + Vite
+# miniCoreFront - Frontend en Vue.js
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Descripción
+miniCoreFront es el frontend desarrollado con Vue.js para la aplicación MiniCore. Se conecta a la API RESTful de MiniCore (ASP.NET Core) para gestionar clientes, contratos y generar reportes visuales interactivos.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+## Características
+- Interfaz amigable y responsiva utilizando Bootstrap.
+- Formulario para seleccionar un rango de fechas y generar reportes de montos por cliente.
+- Integración con la API de MiniCore utilizando Axios para realizar solicitudes HTTP.
+- Enrutamiento dinámico con Vue Router.
+
+## Tecnologías Utilizadas
+- **Vue 3**
+- **Vite** como herramienta de construcción.
+- **Axios** para la interacción con la API.
+- **Bootstrap 5** para estilos y diseño responsivo.
+
+## Configuración del Proyecto
+
+### Instalación
+
+1. **Clonar el repositorio:**
+   ```bash
+   git clone https://github.com/camipaula/miniCoreFront.git
+   
+2. **Instalar dependencias: Navega al directorio del proyecto y ejecuta el siguiente comando para instalar todas las dependencias:**
+   ```bash
+   npm install
+
+4. **Configurar la URL de la API: En el archivo variables.js, asegúrate de que la URL de la API apunte correctamente al backend:**
+
+   ```bash
+    const variables = {
+        API_URL: "https://localhost:7220/api/"
+    }
+
+4. **Ejecutar la aplicación en modo de desarrollo:**
+
+   ```bash
+    npm run dev
+
+El frontend estará disponible en http://localhost:5173.
+
