@@ -45,18 +45,26 @@ export default {
     };
   },
   methods: {
-    submitForm() {
-      axios.get(variables.API_URL + "Reporte/Resultado", {
-        params: {
-          fechaDesde: this.startDate,
-          fechaHasta: this.endDate
-        }
-      })
-      .then((response) => {
-        this.resultados = response.data;
-      });
-    }
+  submitForm() {
+    axios.get(variables.API_URL + "Reporte/Resultado", {
+      params: {
+        fechaDesde: this.startDate,
+        fechaHasta: this.endDate
+      },
+      headers: {
+        'Authorization': 'Basic ' + btoa('11199967:60-dayfreetrial'), // Agregar las credenciales de autenticación
+        'Content-Type': 'application/json'
+      }
+    })
+    .then((response) => {
+      this.resultados = response.data;
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    });
   }
+}
+
 };
 </script>
 
