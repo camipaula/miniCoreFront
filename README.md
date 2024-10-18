@@ -30,16 +30,15 @@ npm install
 
 3. **Configurar la URL de la API: En el archivo variables.js, asegúrate de que la URL de la API apunte correctamente al backend:**
 
-javascript
    ```bash
-   const variables = {
+ const variables = {
      API_URL: "https://localhost:7220/api/"
-   }
+ }
 
 4. **Ejecutar la aplicación en modo de desarrollo:**
 
    ```bash
-   npm run dev
+ npm run dev
 
 El frontend estará disponible en http://localhost:5173.
 
